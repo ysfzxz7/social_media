@@ -12,3 +12,19 @@
 body{
   height: 85vh;
 }
+
+.user_pic{
+  position: relative;
+}
+.user_pic::after{
+  content: "";
+  position: absolute;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background-color: green;
+  right: 0;
+  top: 0;
+  border-radius: 50%;
+  outline: white 2px solid;
+}
