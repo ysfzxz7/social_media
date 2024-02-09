@@ -13,16 +13,16 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className=" flex  justify-between py-2 h-[5vh]">
+        <div className=" flex  justify-between py-2 h-[5vh] ">
             <Link href="/" className="flex-1  text-center">
               Home
             </Link>
            <div className="flex justify-around  flex-1 ">
            <Link href="/posts">
-              posts
+              Posts
             </Link>
-            <Link href="/articals">
-              Articls
+            <Link href="/users">
+              Users
             </Link>
             <Link href="/albums">
               Photos
