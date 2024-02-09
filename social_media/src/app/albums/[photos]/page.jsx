@@ -12,7 +12,7 @@ export default async function Photos({params}){
     const getPhotos = photos.filter((photo) => photo.albumId === parseInt(params.photos));
      
     return(
-        <div className="flex bg-gray-50 justify-center   flex-wrap p-y-5 space-x-3 space-y-5">
+        <div className="flex bg-gray-50 justify-center  flex-wrap p-y-5 space-x-3 space-y-5">
            <h1 className="border w-full px-20 py-3"> <span className="bg-blue-400 px-3 py-1  border font-medium rounded cursor-pointer"> Albums : </span></h1>
            {
             getPhotos.map((photos)=>(
@@ -26,11 +26,6 @@ export default async function Photos({params}){
                 </div> 
             ))
            }
-           
-           
-           
-           
-              
         </div>
     )
 }

@@ -19,11 +19,10 @@ export default async function Posts() {
 
         return (
         <div>
-            <h1 className="bg-green-600 p-3 text-center">post page, Here you can find some todos</h1>
+            <h1 className="bg-green-600 p-3 text-center">Post page, Here you can find all Posts</h1>
         <div className="flex justify-center space-x-2  space-y-2 flex-wrap p-2">
-                
-
-                {todos.map(todo =>(
+            {
+            todos.map(todo =>(
                     <Link href={`posts/${todo.id}`}  className="border w-[32%] p-5 shadow-md rounded bg-gray-100/5">
                         <div className=" space-y-3">
                             <h1 className="w-fit items-center rounded-md bg-yellow-50 px-2 py-1 text-xs font-medium text-yellow-800 ring-1 ring-inset ring-yellow-600/20 ">{getUserName(todo.userId)}</h1>
