@@ -13,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <div className=" flex  justify-between py-2">
+        <div className=" flex  justify-between py-2 h-[5vh]">
             <Link href="/" className="flex-1  text-center">
               Home
             </Link>
@@ -24,8 +24,8 @@ export default function RootLayout({ children }) {
             <Link href="/articals">
               Articls
             </Link>
-            <Link href="/about">
-              About
+            <Link href="/albums">
+              Photos
             </Link>
             <Link href="/login">
               Log - in
