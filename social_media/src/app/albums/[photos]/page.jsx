@@ -13,7 +13,7 @@ export default async function Photos({params}){
      
     return(
         <div className="flex bg-gray-50 justify-center  flex-wrap p-y-5 space-x-3 space-y-5">
-           <h1 className="border w-full px-20 py-3"> <span className="bg-blue-400 px-3 py-1  border font-medium rounded cursor-pointer"> Albums : </span></h1>
+           <h1 className="border w-full px-20 py-3"> <span className="bg-blue-400 px-3 py-1  border font-medium rounded cursor-pointer"> Albums {params.photos} </span></h1>
            {
             getPhotos.map((photos)=>(
                 <div key={photos.id} className="min-h-10 border p-5 shadow-md w-[20%] rounded ">

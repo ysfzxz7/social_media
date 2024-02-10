@@ -3,7 +3,9 @@
 export default function Photos({children}){
 
     return(
-        <div className=" h-[100%]">
+        <div className="flex flex-col relative">
+           
+
             {children}
         </div>
     )
